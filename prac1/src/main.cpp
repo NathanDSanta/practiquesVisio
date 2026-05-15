@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
   int lowTh{45};
   int highTh{90};
   int threshold{127};
-  int blockSize{11};
+  int blockSize{255};
 
   while (charCheckForESCKey != 27 && webCam.isOpened()){    // loop until ESC key is pressed or webcam is lost
     bool frameSuccess = webCam.read(imgOriginal);           // get next frame from input stream
